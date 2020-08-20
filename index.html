@@ -41,7 +41,7 @@ main page
           <div class="user-info">
             <a data-toggle="collapse" href="#collapseExample" class="username">
               <span>
-                Tania Andrew
+                Tania Endrew
                 <b class="caret"></b>
               </span>
             </a>
@@ -338,31 +338,6 @@ main page
             </div>
             <a class="navbar-brand" href="javascript:;">Dashboard</a>
           </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Action
-            </button>
-            <div class="dropdown-menu text_align-center border">
-              <!-- Dropdown menu links -->
-             <a class="dropdown-item" href="#">Copy/Move</a>
-             <a class="dropdown-item" href="#">Edit</a>
-             <a class="dropdown-item" href="#">Feedback</a>
-             <a class="dropdown-item" href="#">Find</a>
-             <a class="dropdown-item" href="#">Publish</a>
-             <a class="dropdown-item" href="#">Delete/Remove</a>
-
-            </div>
-          </div>
-          <div class="form-group bmd-form-group is-filled " style="margin-left: 200px">
-            Date Picker
-               <input type="text" class="form-control datepicker" value="10/06/2018">
-           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-          </button>
           <div class="collapse navbar-collapse justify-content-end">
             <form class="navbar-form">
               <div class="input-group no-border">
@@ -416,6 +391,20 @@ main page
           </div>
         </div>
       </nav>
+      <div id="bc1" class="btn-group btn-breadcrumb" style="margin-bottom: -200px ; margin-left: 20px;">
+                          <a href="#" class="btn btn-default"><i class="fa fa-home"></i></a>
+                          <div class="btn btn-default">...</div>
+                          <a href="#" class="btn btn-default"><div>Activity</div></a>
+                          <a href="#" class="btn btn-default"><div>Details</div></a>
+                          <a href="#" class="btn btn-default"><div>Feedback</div></a>
+                          <a href="#" class="btn btn-default"><div>Indicators</div></a>
+                          <a href="#" class="btn btn-default"><div>Structure</div></a>
+                          <a href="#" class="btn btn-default"><div>Team </div></a>
+                      </div>
+      
+                  
+                      
+              
       <!-- End Navbar -->
       <div class="content">
         <div class="content">
@@ -515,11 +504,8 @@ main page
                                  </div>
                             </div> 
                             </form>
-                          </div>
-                              
-                          
                       </div>
-                      <div class="tab-pane" id="link3">
+                       <div class="tab-pane" id="link3">
                         Completely 
                       </div>
                       <div class="tab-pane" id="link4">
@@ -530,7 +516,10 @@ main page
                       </div>
                       <div class="tab-pane" id="link6">
                         Completely 
+                      </div>     
+                          
                       </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -568,16 +557,16 @@ main page
                     </ul>
 
                     <div class="tab-content tab-space">
-                      <div class="tab-pane" id= "Competencies"> 
+                      <div class="tab-pane active" id= "Competencies"> 
                       <div class="col-md-12">
                         
-                            <div id="accordion" role="tablist">
+                            <div id="accordion" role="tablist" >
                                      <div class="card-collapse">
                                       <div class="card-header" role="tab" id="one">
                                         <h5 class="mb-0">
                                           <a style="font-size: 18px; color: inherit; margin-bottom: 20px;  " data-toggle="collapse" href="#collapseAbility" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
                                              Abilities
-                                            <i class="material-icons">keyboard_arrow_down</i>
+                                            <i class="material-icons">keyboard_arrow_right</i>
                                           </a>
                                         </h5>
                                         <button style="margin: -50px -10px; background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
@@ -599,8 +588,28 @@ main page
                                               <tbody>
                                                 <tr>
                                                   <td>Abilities 001</td>
-                                                  <td>high</td>
-                                                  <td>10</td>
+                                                  <td>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                          <div class="col-lg-12">
+                                                            <div class="star-rating">
+                                                              <span class="fa fa-star-o" data-rating="1"></span>
+                                                              <span class="fa fa-star-o" data-rating="2"></span>
+                                                              <span class="fa fa-star-o" data-rating="3"></span>
+                                                              <span class="fa fa-star-o" data-rating="4"></span>
+                                                              <span class="fa fa-star-o" data-rating="5"></span>
+                                                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                  </td>
+                                                  <td><div id="wrapper">
+                                                          <div class="bar green"></div>
+                                                          <div class="bar greener"></div>
+                                                          <div class="bar greenest"></div>
+                                                          <div class="bar greenerest"></div>
+                                                      </div><i class="material-icons">bar_chart</i></td>
                                                   <td class="td-actions text-right" >
                                                     <button type="button" rel="tooltip" class="btn btn-info">
                                                       <i class="material-icons">check_circle</i>
@@ -641,8 +650,25 @@ main page
                                                   </tr>
                                                    <tr>
                                                   <td>Abilities 002</td>
-                                                  <td>high</td>
-                                                  <td>10</td>
+                                                  <td>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                          <div class="col-lg-12">
+                                                            <div class="star-rating">
+                                                              <span class="fa fa-star-o" data-rating="1"></span>
+                                                              <span class="fa fa-star-o" data-rating="2"></span>
+                                                              <span class="fa fa-star-o" data-rating="3"></span>
+                                                              <span class="fa fa-star-o" data-rating="4"></span>
+                                                              <span class="fa fa-star-o" data-rating="5"></span>
+                                                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                  </td>
+                                                  <td>
+                                                  <i class="material-icons">bar_chart</i>
+                                                  </td>
                                                   <td class="td-actions text-right" >
                                                     <button type="button" rel="tooltip" class="btn btn-info">
                                                       <i class="material-icons">check_circle</i>
@@ -690,33 +716,97 @@ main page
                           </div>
                         <div class="row">
                           <div class="col-md-12">
-                            <h5>Interests</h5> 
-                            <!-- <i class="material-icons">keyboard_arrow_down</i> -->
-                            <button style="margin-top: -50px; background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                             <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="one">
+                                        <h5 class="mb-0">
+                                          <a style="font-size: 18px; color: inherit; margin-bottom: 20px;  " data-toggle="collapse" href="#collapseInterst" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             Interst
+                                            <i class="material-icons">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                        <button style="margin: -50px -10px; background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                                      </div>
+                                      <div id="collapseInterst" class="collapse show" role="tabpanel" aria-labelledby="one" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                          <div>interst</div>
+                                        </div>
+                                      </div>
+                                    </div>
                             <div class="border-top my-3"></div>
                           </div>
                         </div>
-                        <div class="row">
+                      </div>
+                         <div class="row">
                           <div class="col-md-12">
-                            <h5>Knowledge</h5> 
-                            <button style="margin-top: -50px;background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                             <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="one">
+                                        <h5 class="mb-0">
+                                          <a style="font-size: 18px; color: inherit; margin-bottom: 20px;  " data-toggle="collapse" href="#collapseKnowledge" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             Knowledge
+                                            <i class="material-icons">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                        <button style="margin: -50px -10px; background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                                      </div>
+                                      <div id="collapseKnowledge" class="collapse show" role="tabpanel" aria-labelledby="one" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                          <div>knolwledge</div>
+                                        </div>
+                                      </div>
+                                    </div>
                             <div class="border-top my-3"></div>
                           </div>
                         </div>
-                        <div class="row">
+                      </div>
+                         <div class="row">
                           <div class="col-md-12">
-                            <h5>Skills</h5> 
-                            <button style="margin-top: -50px;background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                             <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="one">
+                                        <h5 class="mb-0">
+                                          <a style="font-size: 18px; color: inherit; margin-bottom: 20px;  " data-toggle="collapse" href="#collapseSkill" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             Skills
+                                            <i class="material-icons">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                        <button style="margin: -50px -10px; background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                                      </div>
+                                      <div id="collapseSkill" class="collapse show" role="tabpanel" aria-labelledby="one" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                          <div>Skill</div>
+                                        </div>
+                                      </div>
+                                    </div>
                             <div class="border-top my-3"></div>
                           </div>
                         </div>
-                        <div class="row">
+                      </div>
+                         <div class="row">
                           <div class="col-md-12">
-                            <h5>Styles</h5> 
-                            <button style="margin-top: -50px;background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                             <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="one">
+                                        <h5 class="mb-0">
+                                          <a style="font-size: 18px; color: inherit; margin-bottom: 20px;  " data-toggle="collapse" href="#collapseStyle" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             Styles
+                                            <i class="material-icons">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                        <button style="margin: -50px -10px; background-color: #5cbf86; " class="btn float-right">Add<div class="ripple-container"></div></button>
+                                      </div>
+                                      <div id="collapseStyle" class="collapse show" role="tabpanel" aria-labelledby="one" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                          <div>styles</div>
+                                        </div>
+                                      </div>
+                                    </div>
                             <div class="border-top my-3"></div>
                           </div>
                         </div>
+                      </div>
+                        <!-- </div> -->
                         <div class="row">
                           <div class="col-md-12">
                         
@@ -726,10 +816,10 @@ main page
                                         <h5 class="mb-0">
                                           <a style="font-size: 38px; color: inherit; margin-bottom: 30px;  " data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
                                              Jobs
-                                            <i class="material-icons">keyboard_arrow_down</i>
+                                            <i class="material-icons">keyboard_arrow_right</i>
                                           </a>
                                         </h5>
-                                         <button style="margin-top: -72px; background-color: #5cbf86; border-color: #999999;" class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
+                                         <a href="../eduity/examples/forms/wizard.html"><button style="margin-top: -72px; background-color: #5cbf86; border-color: #999999;" class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button></a>
                                       </div>
                                       <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" style="">
                                         <div class="card-body">
@@ -737,7 +827,7 @@ main page
                                           <table class="table">
                                               <thead>
                                                 <tr>
-                                                  <th>Job Tile</th>
+                                                  <th>Job Title</th>
                                                   <th>People</th>
                                                   <th>Full-Times</th>
                                                   <th class="text-right">Feedback</th>
@@ -837,7 +927,7 @@ main page
                                         <h5 class="mb-0">
                                           <a style="font-size: 38px; color: inherit; margin-bottom: 30px;  " data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
                                              Units
-                                            <i class="material-icons badge-red">keyboard_arrow_down</i>
+                                            <i class="material-icons badge-red">keyboard_arrow_right</i>
                                           </a>
                                         </h5>
                                          <button style="margin-top: -72px; background-color: #5cbf86; border-color: #999999;" class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
@@ -993,13 +1083,29 @@ main page
                           </div>
                         </div>
                         </div>
-                        <div class="row">
+                         <div class="row">
                           <div class="col-md-12">
-                            <h2>Templates</h2> 
-                            <button style="margin-top: -62px; background-color: #5cbf86; border-color: #999999; " class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
+                             <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="one">
+                                       <h5 class="mb-0">
+                                          <a style="font-size: 38px; color: inherit; margin-bottom: 30px;  " data-toggle="collapse" href="#collapsetemplete" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             Templetes
+                                            <i class="material-icons badge-red">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                        <button style="margin-top: -72px; background-color: #5cbf86; border-color: #999999;" class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
+                                      </div>
+                                      <div id="collapsetemplete" class="collapse show" role="tabpanel" aria-labelledby="one" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                          <div>Templete</div>
+                                        </div>
+                                      </div>
+                                    </div>
                             <div class="border-top my-3"></div>
                           </div>
                         </div>
+                      </div>
                       </div>
                     </div>
                       <div class="tab-pane" id="goals">
@@ -1038,13 +1144,25 @@ main page
                         </div>
                          <div class="row">
                           <div class="col-md-12">
-                             <h5 class="mb-0">
-                                <a style="font-size: 38px; color: inherit; margin-bottom: 30px;  " data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-                                        People
-                                    <i class="material-icons badge-red">keyboard_arrow_down</i>
-                                  </a>
-                              </h5>
-                          <div class="border-top my-3"></div>
+                            <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                          <a style="font-size: 38px; color: inherit; margin-bottom: 30px;  " data-toggle="collapse" href="#collapsepeople" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             People
+                                            <i class="material-icons badge-red">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                         <button style="margin-top: -72px; background-color: #5cbf86; border-color: #999999;" class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
+                                      </div>
+                                      <div id="collapsepeople" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                         <div>name  here</div>
+                                        </div>
+                                      </div>
+                            </div>
+                            <div class="border-top my-3"></div>
+                          </div>
                           </div>
                         </div>
 
@@ -1088,17 +1206,50 @@ main page
                         </div>
                         <div class="row">
                           <div class="col-md-12">
-                            <h2>Jobs</h2> 
-                            <button style="margin-top: -62px; background-color: #5cbf86; border-color: #999999; " class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
-                          <div class="border-top my-3"></div>
+                             <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                          <a style="font-size: 38px; color: inherit; margin-bottom: 30px;  " data-toggle="collapse" href="#collapsejob" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             Jobs
+                                            <i class="material-icons badge-red">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                         <button style="margin-top: -72px; background-color: #5cbf86; border-color: #999999;" class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
+                                      </div>
+                                      <div id="collapsejob" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                         <div>jobs  here</div>
+                                        </div>
+                                      </div>
+                            </div>
+                            <div class="border-top my-3"></div>
+                          </div>
                           </div>
                         </div>
                          <div class="row">
                           <div class="col-md-12">
-                            <h2>Units</h2> 
-                            <button style="margin-top: -62px; background-color: #5cbf86; border-color: #999999; " class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button>
-                          <div class="border-top my-3"></div>
+                           <div id="accordion" role="tablist">
+                                     <div class="card-collapse">
+                                      <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                          <a style="font-size: 38px; color: inherit; margin-bottom: 30px;  " data-toggle="collapse" href="#collapseunit" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                             Units
+                                            <i class="material-icons badge-red">keyboard_arrow_right</i>
+                                          </a>
+                                        </h5>
+                                         <a href="../eduity/examples/forms/wizard.html"><button style="margin-top: -72px; background-color: #5cbf86; border-color: #999999;" class="btn btn-primary btn-lg float-right">Add<div class="ripple-container"></div></button></a>
+                                      </div>
+                                      <div id="collapseunit" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                         <div>unit here</div>
+                                        </div>
+                                      </div>
+                            </div>
+                            <div class="border-top my-3"></div>
                           </div>
+                          </div>
+							 </div>
                         </div>
                         
                       </div> 
@@ -1110,14 +1261,43 @@ main page
                   </div>
                 </div>
               </div>
-            </div>
+            
 
             <!-- new row End -->
+	<div class="row">
+			 <div class="col-md-6">
+				 <h4 class="card-title">Action</h4>
+								  <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Action
+            </button>
+            <div class="dropdown-menu text_align-center border">
+              <!-- Dropdown menu links -->
+             <a class="dropdown-item" href="#">Copy/Move</a>
+             <a class="dropdown-item" href="#">Edit</a>
+             <a class="dropdown-item" href="#">Feedback</a>
+             <a class="dropdown-item" href="#">Find</a>
+             <a class="dropdown-item" href="#">Publish</a>
+             <a class="dropdown-item" href="#">Delete/Remove</a>
+
+            </div>
+				 </div></div>
+							 
+          <div class="col-md-6" ><h4 class="card-title">Date Picker</h4><div class="form-group"><div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date"><!----><input style="border-color: lightgrey; background-color: #f1f1f1; " type="date" autocomplete="off" name="" placeholder="Pick a day" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-date"></i><!----></span><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon"></i><!----><!----><!----><!----></span><!----></span><!----><!----></div></div></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+         
+					
              <!-- add here more code -->
           
           </div>
         </div>
       </div>
+</div>
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">

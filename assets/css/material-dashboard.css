@@ -1,18 +1,23 @@
-/*!
-
- =========================================================
- * Material Dashboard Pro - v2.1.2
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-dashboard-pro
- * Copyright 2020 Eduity (#)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-/*     brand Colors              */
+.btn.btn-secondary.dropdown-toggle.border {
+    height: 41px;
+}
+.fixed-plugin {
+    display: none !important;
+}
+td .btn-group {
+    float: right;
+}
+.el-input__inner {
+    border: 1px solid #fff;
+        border-top-color: rgb(255, 255, 255);
+        border-right-color: rgb(255, 255, 255);
+        border-bottom-color: rgb(255, 255, 255);
+        border-left-color: rgb(255, 255, 255);
+    background: #fff !important;
+    padding: 4px;
+    color: #ccc;
+    font-size: 12px;
+}
 .card {
   font-size: .875rem; }
 
@@ -28,14 +33,96 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+/* level rating*/
 
+
+
+/* star rating*/
 @-ms-viewport {
   width: device-width; }
+  .star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+.btn-breadcrumb .btn {
+  padding:6px 12px 6px 4px;
+}
+.btn-breadcrumb .btn:first-child {
+  padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+  padding:6px 18px 6px 24px;
+}
+
+/** Default button **/
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+  border-left: 10px solid #fff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+  border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+  border-left: 10px solid #ebebeb;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+  border-left: 10px solid #adadad;
+}
+
+/* The responsive part */
+
+.btn-breadcrumb > * > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.btn-breadcrumb > *:nth-child(n+2) {
+  display:none;
+}
+
+/* === For phones =================================== */
+@media (max-width: 767px) {
+    .btn-breadcrumb > *:nth-last-child(-n+2) {
+        display:block;
+    } 
+    .btn-breadcrumb > * div {
+        max-width: 70px;
+    }
+}
+
+/* === For tablets ================================== */
+@media (min-width: 768px) and (max-width:991px) {
+    .btn-breadcrumb > *:nth-last-child(-n+4) {
+        display:block;
+    } 
+    .btn-breadcrumb > * div {
+        max-width: 100px;
+    }
+}
+
+/* === For desktops ================================== */
+@media (min-width: 992px) {
+    .btn-breadcrumb > *:nth-last-child(-n+6) {
+        display:block;
+    } 
+    .btn-breadcrumb > * div {
+        max-width: 170px;
+        padding-left: : 5px;
+    }
+}
+
+.star-rating .fa-star{color: yellow;}
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     padding: 15px 32px !important;
     vertical-align: middle;
     border-color: #ddd;
+}
+.table thead tr th {
+    font-size: 1.263rem !important;
+    font-weight: 400 !important;
+    opacity: 1 !important;
+    padding-right: 75px !important;
 }
 
 element.style {
@@ -795,13 +882,25 @@ pre {
       max-width: 540px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 720px; }
+       }
+       .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 26% !important;
+    padding: 0px 80px 0px !important;
+}
   @media (min-width: 992px) {
     .container {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1140px; }
+       }
+           .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0px 100px !important;
+}
 
 .container-fluid {
   width: 100%;
@@ -13357,7 +13456,6 @@ a {
   -moz-transition: all .34s; }
 
 .fixed-plugin {
-	display: none;
   position: fixed;
   top: 115px;
   right: 0;
